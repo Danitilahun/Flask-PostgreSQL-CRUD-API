@@ -20,6 +20,7 @@ def create_account_controller():
     request_form = request.form.to_dict()
 
     id = str(uuid.uuid4())
+    print(request_form)
     new_account = Account(
                           id             = id,
                           email          = request_form['email'],
